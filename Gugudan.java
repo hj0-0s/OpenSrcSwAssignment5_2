@@ -7,13 +7,17 @@ public class Gugudan {
         int num = scan.nextInt();
         if (num == 0) {
             for (int i = 1; i <= 9; i++) {
-                for (num = 2; num <= 9; num++)
+                for (num = 2; num <= 9; num++) {
                     System.out.printf("%d * %d = %2d  ", num, i, (num * i));
+                }
                 System.out.println();
             }
+        } else if (num < 0) {
+            System.out.println("구구단 출력 불가");
         } else {
-            for (int i = 1; i <= 9; i++)
+            for (int i = 1; i <= 9; i++) {
                 System.out.println(num + " * " + i + " = " + (num * i));
+            }
         }
     }
 }
